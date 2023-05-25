@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-family: 'Kanit', sans-serif;
+}
+#navbar {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+#navbar #side {
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#side span {
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  border-radius: 10px;
+  background: #fff;
+}
+#side :nth-child(1) {
+  top: 10px;
+  width: 23px;
+}
+#side :nth-child(3) {
+  bottom: 10px;
+  width: 15px;
+}
+#navbar #toggle {
+  height: 20px;
+  width: 43px;
+  background: rgba(255,255,255, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+#toggle i {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgba(255,255,255, 0.8);
+  padding: 0px 2px;
+}
+#screen {
+  width: 93%;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 15px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  padding: 0px 10px;
+  font-size: 25px;
+  overflow: hidden;
+}
+#buttons {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, auto);
+  gap: 6px 15px;
+  margin-top: 15px;
+}
+#buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.5);
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  font-size: 23px;
+  font-weight: 800;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+#buttons .equal {
+  height: 50px;
+  width: 225%;
+  border-radius: 30px;
+  background: #8CB8C8;
+}
+#buttons .btn:active {
+  background: rgba(255,255,255,0.7);
+}
+#buttons .equal:active {
+  background: #829AA2;
+}
+.screen.toggle {
+  background: #F4DF68;
+  color: black;
+}
+.screen.toggle #side span {
+  background: black;
+}
+.screen.toggle #screen {
+  background: rgba(255,255,255,0.7);
+}
+.screen.toggle #navbar #toggle {
+  background: rgba(0,0,0,0.1);
+}
+.screen.toggle #navbar #toggle i {
+  color: black;
+}
+.screen.toggle .btn {
+  box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.2);
+}
